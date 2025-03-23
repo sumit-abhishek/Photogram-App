@@ -6,7 +6,7 @@ import MyPhoto from "./modules/myPhotos/MyPhoto";
 import Error from "./modules/error/Error";
 import Profile from "./modules/profile/Profile";
 import CreatePost from "./modules/posts/CreatePost";
-import ProtectedRoutes from "./components/ui/ProtectedRoutes/ProtectedRoutes";
+import ProtectedRoutes from "./components/ProtectedRoutes/ProtectedRoutes";
 
 const router = createBrowserRouter([
   {
