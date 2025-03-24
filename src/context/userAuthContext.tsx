@@ -47,7 +47,7 @@ export const userAuthContext = createContext<AuthContextData>({
   googleSignIn,
 });
 
-export const userAuthProvider: React.FunctionComponent<IUserAuthProvider> = ({
+export const UserAuthProvider: React.FunctionComponent<IUserAuthProvider> = ({
   children,
 }) => {
   const [user, setUser] = useState<User | null>(null);
@@ -59,7 +59,7 @@ export const userAuthProvider: React.FunctionComponent<IUserAuthProvider> = ({
       }
       return () => unsubscribe();
     });
-  });
+  }, []);
   const value: AuthContextData = {
     user,
     logIn,

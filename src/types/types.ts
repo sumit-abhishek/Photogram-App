@@ -6,5 +6,4 @@ export interface UserSignUp {
 export interface UserLogIn {
   email: string;
   password: string;
-  confirmPassword: string;
 }
